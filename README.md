@@ -1,17 +1,14 @@
-# Ember-deparam
+# Deparam
 
-This README outlines the details of collaborating on this Ember addon.
+Ember addon based on [jquery-deparam](https://github.com/AceMetrix/jquery-deparam) 
+
+## Ember addon docs
 
 ## Installation
 
 * `git clone` this repository
 * `npm install`
 * `bower install`
-
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
 
 ## Running Tests
 
