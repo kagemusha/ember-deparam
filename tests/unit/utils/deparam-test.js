@@ -1,6 +1,7 @@
-import Ember from 'ember';
 import  { deparam } from 'ember-deparam/utils/deparam';
 import { module, test } from 'qunit';
+import { typeOf } from '@ember/utils';
+import $ from 'jquery';
 
 module('Unit | Utility | deparam');
 
@@ -34,7 +35,7 @@ function testDeparamedTypes(assert, stringTypeArray, coerce=false) {
     const propString = stringType[0];
     const prop = deparam(propString, coerce).prop;
     const type = stringType[1];
-    assert.equal(Ember.typeOf(prop), type, `Prop string(${coerce ? "coerced":"uncoerced"}): ${propString}`);
+    assert.equal(typeOf(prop), type, `Prop string(${coerce ? "coerced":"uncoerced"}): ${propString}`);
   }));
 }
 
